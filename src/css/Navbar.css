@@ -1,0 +1,33 @@
+/** @format */
+
+.nav {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem;
+}
+
+.navbar-items:first-child {
+  flex: 2;
+  color: blue;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+
+.navbar-items:nth-child(2) {
+  border: 2px solid whitesmoke;
+  border-radius: 2rem;
+  padding: 0.5rem 0 0 1rem;
+  flex: 6;
+}
+
+.navbar-items:last-child {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+  padding-top: 0.5rem;
+}
+
+.navbar-items-contents {
+  margin: 0 1.5rem;
+}
