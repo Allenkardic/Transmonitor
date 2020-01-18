@@ -1,0 +1,15 @@
+/** @format */
+
+.container-trans {
+  padding: 0 0 0 18rem;
+  /* padding: 0 0 0 1rem; */
+  /* margin: 0; */
+  color: blue;
+  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 720px) {
+  .container-trans {
+    padding: 0 0 0 2rem;
+  }
+}
