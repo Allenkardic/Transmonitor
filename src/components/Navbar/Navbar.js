@@ -10,10 +10,13 @@ class Navbar extends Component {
         <div className="navbar-items">
           <h2>TransMonitor</h2>
         </div>
-        <div className="navbar-items">
-          <i class="fas fa-search" />
-          <span style={{ marginLeft: "1rem" }}>Search...</span>
-        </div>
+
+        <input
+          className="navbar-items"
+          placeholder="Search..."
+          icon="fas fa-search"
+        />
+
         <div className="navbar-items">
           <div className="navbar-items-contents">support</div>
           <div className="navbar-items-contents">FAQ</div>

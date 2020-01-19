@@ -4,10 +4,44 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 270px;
   height: 100%;
-  border: 2px solid red;
   background-color: white;
+  border: 2px solid red;
+}
+
+/* .sidebar-item {
+  display: flex;
+  flex-direction: column;
+} */
+
+.generate-invoice {
+  background-color: green;
+  border-radius: 60px;
+  color: white;
+  text-align: center;
+  margin: 2rem 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.sidebar-item-content {
+  margin: 0 1rem 2rem 2rem;
+}
+
+.sidebar-share {
+  margin-bottom: 0.7rem;
+}
+
+.sidebar-share-link {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.sidebar-share-link-first {
+  margin-right: 1rem;
+  color: rgb(10, 10, 10);
+  font-size: 1.2em;
 }
 
 .sidebar-mob {

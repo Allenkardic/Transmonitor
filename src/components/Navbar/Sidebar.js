@@ -28,20 +28,86 @@ class Sidebar extends Component {
     return (
       <div className="sidebar">
         <div className="sidebar-des">
-          <div>
-            <h1>hello</h1>
-            <h3>jjjjj</h3>
+          <div className="sidebar-item">
+            <div className="generate-invoice">GENERATE INVOICE</div>
+            <div className="sidebar-item-content">
+              <div className="sidebar-share">Main</div>
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>Overview</div>
+              </div>
+            </div>
+            <div className="sidebar-item-content">
+              <div className="sidebar-share">Payments</div>
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>All payments</div>
+              </div>
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>Reconcilled payments</div>
+              </div>
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>Un-Reconcilled payments</div>
+              </div>
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>Manual Settlement</div>
+              </div>
+            </div>
+            <div className="sidebar-item-content">
+              <div className="sidebar-share">Orders</div>
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>All Orders</div>
+              </div>
+
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>Pending Orders</div>
+              </div>
+
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>Reconcilled Orders</div>
+              </div>
+            </div>
+            <div className="sidebar-item-content">
+              <div className="sidebar-share-link">
+                <div className="sidebar-share-link-first">
+                  <i class="fab fa-first-order" />
+                </div>
+                <div>Merchant Profile</div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="sidebar-mob">
           <div className="sidebar-mob-item">
             {this.state.showContent ? (
-              <ul className="sidebar-item-content">
-                <li>hello</li>
-                <li>whats</li>
-                <li>jhhhh</li>
-              </ul>
+              <div className="sidebar-item-content">
+                <div>hello</div>
+                <div>whats</div>
+                <div>jhhhh</div>
+              </div>
             ) : null}
           </div>
           <div onClick={this.onToggleClick}>click</div>
