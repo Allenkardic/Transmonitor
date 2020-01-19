@@ -7,7 +7,22 @@ class Transmonitors extends Component {
   render() {
     return (
       <div className="container-trans">
-        <h1>transfer111</h1>
+        <div className="transaction">
+          <div></div>
+          <div></div>
+        </div>
+        <div className="transaction">
+          <div></div>
+          <div></div>
+        </div>
+        <div className="transaction">
+          <div></div>
+          <div></div>
+        </div>
+        <div className="transaction">
+          <div></div>
+          <div></div>
+        </div>
       </div>
     );
   }
