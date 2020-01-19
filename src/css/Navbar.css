@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   padding: 1rem 0.5rem;
+  position: -webkit-sticky, sticky;
   /* background-color: red; */
 }
 

@@ -1,11 +1,11 @@
 /** @format */
 
 .sidebar-des {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 270px;
-  height: 100%;
+  height: 200%;
   background-color: white;
 }
 

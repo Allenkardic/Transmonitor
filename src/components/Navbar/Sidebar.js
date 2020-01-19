@@ -6,14 +6,6 @@ import { Link } from "react-router-dom";
 import "../../css/Sidebar.css";
 
 class Sidebar extends Component {
-  //   closeButton = () => {
-  //     document.getElementById("mySideNav").style.width = "0px";
-  //     // document.querySelector(".open-bars").style.display = "none";
-  //   };
-
-  //   openButton = () => {
-  //     document.getElementById("mySideNav").style.width = "300px";
-  //   };
   constructor(props) {
     super(props);
     this.state = {

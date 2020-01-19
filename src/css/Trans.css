@@ -4,13 +4,11 @@
   padding: 0 0 0 18rem;
   /* padding: 0 0 0 1rem; */
   /* margin: 0; */
-  color: blue;
   background-color: whitesmoke;
 }
 
 .transaction {
   display: flex;
-  border: 2px solid yellow;
   flex-direction: row;
   justify-content: center;
 }
@@ -29,14 +27,25 @@
   width: 80px;
 }
 
+/* .section-two {
+  display: flex;
+  flex-direction: row;
+  border: 2px soild yellow;
+} */
+
+.section-two:first-child {
+  flex: 6;
+  padding: 5rem 5rem;
+}
+
 .payment-section {
   display: flex;
   flex-direction: row;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .item-toggle {
-  border: 2px solid rgb(231, 231, 57);
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -49,6 +58,65 @@
 /* .transaction-items-second {
   margin-left: 1rem;
 } */
+
+.trans-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(201, 201, 196);
+}
+
+.trans-container-items {
+  padding: 1rem 0.3rem;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+.origin-trans {
+  border: none;
+}
+.trans-container-items:first-child {
+  flex: 3;
+}
+.trans-container-items:nth-child(2) {
+  flex: 1;
+}
+.trans-container-items:nth-child(3) {
+  flex: 2;
+}
+.trans-container-items:nth-child(4) {
+  flex: 1;
+}
+
+.trans-container-items:nth-child(5) {
+  flex: 1;
+}
+.trans-container-items:last-child {
+  flex: 1;
+}
+
+.hidden-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.pending-issues {
+  border: 1px solid gray;
+  border-radius: 60px;
+  padding: 0.5rem 1rem;
+  /* width: 300px; */
+}
+
+.vw {
+  border-radius: 50%;
+  background-color: whitesmoke;
+  padding: 0.5rem 0.5rem;
+  margin-right: 1rem;
+}
 
 @media screen and (max-width: 720px) {
   .container-trans {
