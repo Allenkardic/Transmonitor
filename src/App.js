@@ -11,19 +11,22 @@ import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Navbar/Sidebar";
 import Transmonitors from "./components/Transmonitors";
 
+import Notfound from "./components/Notfound";
+
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Provider store={store}>
+    <Provider store={store}>
+      <Router>
+        <div className="App">
           <Navbar />
           <Sidebar />
           <Switch>
             <Route exact path="/" component={Transmonitors} />
+            <Route component={Notfound} />
           </Switch>
-        </Provider>
-      </div>
-    </Router>
+        </div>
+      </Router>
+    </Provider>
   );
 }
 
