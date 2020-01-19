@@ -8,6 +8,48 @@
   background-color: whitesmoke;
 }
 
+.transaction {
+  display: flex;
+  border: 2px solid yellow;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.transaction-items {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 1rem 1rem 0;
+  padding: 0.5rem 1rem;
+  width: 320px;
+  max-width: 100%;
+}
+
+.image-chart {
+  width: 80px;
+}
+
+.payment-section {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.item-toggle {
+  border: 2px solid rgb(231, 231, 57);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 4rem;
+  position: absolute;
+  top: 0;
+  left: 35rem;
+  /* padding: 0.5rem; */
+}
+/* .transaction-items-second {
+  margin-left: 1rem;
+} */
+
 @media screen and (max-width: 720px) {
   .container-trans {
     padding: 0 0 0 2rem;
