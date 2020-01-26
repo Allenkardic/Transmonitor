@@ -13,61 +13,43 @@ class Transmonitor extends Component {
   render() {
     const { id, name, phone } = this.props.trans;
     return (
-      <div class="trans-container">
-        <div className="trans-container-items">
-          {" "}
-          <span className="vw">VW</span>
-          {name}
+      <div>
+        <div>
+          <table>
+            <tr>
+              <td>
+                <span className="vw">VW</span>
+                {name}
+              </td>
+              <td>${id}:1678</td>
+              <td>{phone}</td>
+              <td>{name}</td>
+              <td>
+                <div className="hello">
+                  <div>
+                    {" "}
+                    <span
+                      style={{
+                        color: "green",
+                        fontSize: "1em",
+                        marginRight: "1rem"
+                      }}>
+                      <i class="fas fa-circle" />
+                    </span>{" "}
+                    pending{" "}
+                  </div>
+                </div>
+              </td>
+              <td>
+                <i class="fas fa-angle-down" onClick={this.onToggleClick} />
+              </td>
+            </tr>
+          </table>
         </div>
-        <div className="trans-container-items">{id}</div>
-        <div className="trans-container-items">{phone}</div>
-        <div className="trans-container-items">{id}</div>
-        <div className="trans-container-items">{name}</div>
-        <div className="trans-container-items">
-          <i class="fas fa-arrow-down" onClick={this.onToggleClick} />
-        </div>
+
         <div className="hidden-items">
           {this.state.showContent ? <div>hello</div> : null}
         </div>
-        {/* <table>
-          <tr>
-            <td>
-              {" "}
-              <span>VW</span>
-              {name}
-            </td>
-            <td>{email}</td>
-            <td>{phone}</td>
-            <td>{website}</td>
-            <td>
-              <div className="pending-issues">{name}</div>
-            </td>
-            <td onClick={this.onToggleClick}>click</td>
-          </tr>
-          {this.state.showContent ? (
-            <div>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </div>
-          ) : null}
-        </table> */}
       </div>
     );
   }

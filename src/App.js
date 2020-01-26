@@ -22,7 +22,7 @@ function App() {
           <Sidebar />
           <Switch>
             <Route exact path="/" component={Transmonitors} />
-            <Route component={Notfound} />
+            {/* <Route component={Notfound} /> */}
           </Switch>
         </div>
       </Router>

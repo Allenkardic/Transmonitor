@@ -27,8 +27,8 @@ class Transmonitors extends Component {
     console.log("user props", this.props.trans.users[1]);
     return (
       <div className="container-trans">
-        <div className="transaction">
-          <div className="transaction-items">
+        <div className="section-one-transaction">
+          <div className="section-one-transaction-items">
             <div style={{ marginRight: "1rem" }}>
               <div>Daily Trasaction volume</div>
               <div>
@@ -43,7 +43,7 @@ class Transmonitors extends Component {
             <img className="image-chart" src={chart} alt="" />
           </div>
 
-          <div className="transaction-items">
+          <div className="section-one-transaction-items">
             <div style={{ marginRight: "1rem" }}>
               <div>Daily Trasaction volume</div>
               <div>
@@ -58,7 +58,7 @@ class Transmonitors extends Component {
             <img className="image-chart" src={chart} alt="" />
           </div>
 
-          <div className="transaction-items">
+          <div className="section-one-transaction-items">
             <div style={{ marginRight: "1rem" }}>
               <div>Daily Trasaction volume</div>
               <div>
@@ -73,7 +73,7 @@ class Transmonitors extends Component {
             <img className="image-chart" src={chart} alt="" />
           </div>
 
-          <div className="transaction-items">
+          <div className="section-one-transaction-items">
             <div style={{ marginRight: "1rem" }}>
               <div>Daily Trasaction volume</div>
               <div>
@@ -143,16 +143,15 @@ class Transmonitors extends Component {
           </div>
         </div>
         <div>
-          <div className="container-home">
-            <div className="trans-container-items origin-trans">Item type</div>
-            <div className="trans-container-items origin-trans">Price</div>
-            <div className="trans-container-items origin-trans">
-              Transaction no
-            </div>
-            <div className="trans-container-items origin-trans">Time</div>
-            <div className="trans-container-items origin-trans">pending</div>
-            <div className="trans-container-items origin-trans"></div>
-          </div>
+          <table>
+            <tr>
+              <th>Item Type</th>
+              <th>Price</th>
+              <th>Transaction No</th>
+              <th>Names</th>
+              <th></th>
+            </tr>
+          </table>
           {this.props.trans.users.map((item) => (
             <Transmonitor trans={item} key={item.id} />
           ))}

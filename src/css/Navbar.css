@@ -1,12 +1,14 @@
 /** @format */
 
 .nav {
-  /* position: sticky; */
+  position: sticky;
   display: flex;
   flex-direction: row;
   padding: 1rem 0.5rem;
-  position: -webkit-sticky, sticky;
-  /* background-color: red; */
+  position: -webkit-sticky;
+  top: 0;
+  background-color: white;
+  z-index: 3;
 }
 
 .navbar-items:first-child {
@@ -34,7 +36,7 @@
   margin: 0 1.5rem;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
   .nav {
     display: flex;
     flex-direction: row;

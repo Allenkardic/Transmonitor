@@ -95,14 +95,16 @@ class Sidebar extends Component {
         <div className="sidebar-mob">
           <div className="sidebar-mob-item">
             {this.state.showContent ? (
-              <div className="sidebar-item-content">
+              <div className="sidebar-mob-item-content">
                 <div>hello</div>
                 <div>whats</div>
                 <div>jhhhh</div>
               </div>
             ) : null}
           </div>
-          <div onClick={this.onToggleClick}>click</div>
+          <div onClick={this.onToggleClick} className="click">
+            click!!!!!
+          </div>
         </div>
       </div>
     );

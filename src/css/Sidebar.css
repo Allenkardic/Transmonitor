@@ -1,11 +1,13 @@
 /** @format */
+.sidebar {
+}
 
 .sidebar-des {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
-  width: 270px;
-  height: 200%;
+  width: 261px;
+  height: 100%;
   background-color: white;
 }
 
@@ -47,7 +49,7 @@
   display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .sidebar-des {
     display: none;
   }
@@ -56,17 +58,16 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    left: 0;
+    /* background-color: yellowgreen; */
     /* top: 3rem; */
     height: 100%;
   }
 
-  .sidebar-item-content {
+  .sidebar-mob-item-content {
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
     background-color: yellowgreen;
-    width: 250px;
+    width: 300px;
     height: 100%;
   }
 }
