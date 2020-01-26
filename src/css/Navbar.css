@@ -14,7 +14,7 @@
 .navbar-items:first-child {
   flex: 2;
   color: blue;
-  text-align: center;
+  padding-left: 2rem;
   padding-top: 0.2rem;
 }
 
@@ -36,12 +36,28 @@
   margin: 0 1.5rem;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1024px) {
   .nav {
     display: flex;
     flex-direction: row;
     padding: 0.5rem 0.5rem;
-    background-color: red;
+    background-color: white;
+  }
+
+  .navbar-items:first-child {
+    flex: 2;
+    color: blue;
+    text-align: center;
+    padding-top: 0.2rem;
+    font-size: 0.8em;
+  }
+
+  .navbar-items:nth-child(2) {
+    flex: 8;
+    border: 2px solid whitesmoke;
+    border-radius: 2rem;
+    padding: 0.2rem 0 0 1rem;
+    margin-left: 2rem;
   }
 
   .navbar-items:last-child {

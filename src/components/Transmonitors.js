@@ -89,33 +89,22 @@ class Transmonitors extends Component {
           </div>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row"
-          }}>
-          <div
-            style={{
-              flex: "6",
-              padding: "1rem 1rem"
-            }}>
-            <img style={{ maxWidth: "600px" }} src={chart} alt="img" />
+        <div className="section-two">
+          <div className="section-two-items">
+            <img style={{ maxWidth: "100%" }} src={chart} alt="img" />
           </div>
-          <div
-            style={{
-              flex: "4",
-              padding: "1rem 1rem"
-            }}>
-            <img style={{ width: "500px" }} src={chart} alt="img" />
+          <div className="section-two-items">
+            <img style={{ maxWidth: "100%" }} src={chart} alt="img" />
           </div>
         </div>
 
         <div className="section-three">
           <h1 style={{ marginTop: "2rem", marginBottom: "2rem" }}>Payments</h1>
+
           <div className="payment-section">
-            <div>showing 20 > out of 500 payment</div>
+            <div className="showing">showing 20 > out of 500 payment</div>
             <input
-              style={{ height: "3vh", marginRight: "5rem", marginLeft: "4rem" }}
+              className="input-payment-section"
               placeholder="search payment"
             />
             <div>show</div>
@@ -126,7 +115,7 @@ class Transmonitors extends Component {
                 <span
                   style={{ marginLeft: "6rem" }}
                   onClick={this.onToggleClick}>
-                  <i class="fas fa-arrow-down" />
+                  <i class="fas fa-angle-down" />
                 </span>{" "}
               </div>
               <div>
@@ -142,6 +131,8 @@ class Transmonitors extends Component {
             </div>
           </div>
         </div>
+
+        {/* table */}
         <div>
           <table>
             <tr>
